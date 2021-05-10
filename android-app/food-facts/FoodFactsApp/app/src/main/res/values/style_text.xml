@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FoodFactText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/saira_regular</item>
+    </style>
+
+    <style name="FoodFactText.Bold">
+        <item name="android:fontFamily">@font/saira_bold</item>
+    </style>
+
+    <style name="FoodFactText.SemiBold">
+        <item name="android:fontFamily">@font/saira_semibold</item>
+    </style>
+
+    <style name="FoodFactText.Medium">
+        <item name="android:fontFamily">@font/saira_medium</item>
+    </style>
+
+    <style name="FoodFactText.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FoodFactText.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FoodFactText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FoodFactText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FoodFactText.Medium.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FoodFactText.Medium.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FoodFactText.SemiBold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FoodFactText.SemiBold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
