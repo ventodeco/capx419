@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        style="@style/FoodFactButton"
+        android:layout_width="190dp"
+        android:layout_height="190dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/FoodFactText.Bold.Black"
+        android:textSize="@dimen/text_size_30sp"
+        android:text="@string/label_food"/>
+
+</LinearLayout>
