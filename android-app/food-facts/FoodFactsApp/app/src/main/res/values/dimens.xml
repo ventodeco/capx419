@@ -30,4 +30,6 @@
     <dimen name="text_size_30sp">30sp</dimen>
     <dimen name="text_size_32sp">32sp</dimen>
     <dimen name="dimen_90dp">90dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_113dp">113dp</dimen>
 </resources>

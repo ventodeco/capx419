@@ -3,6 +3,7 @@
     <string name="title_how_to_use">Bagaimana cara menggunakannya?</string>
     <string name="title_history">History</string>
     <string name="title_team">Vliegen</string>
+    <string name="title_detail">Detail</string>
 
     <string name="label_sub_app_name">Mengetahui apa yang kamu makan</string>
     <string name="label_food">Food</string>
@@ -14,8 +15,10 @@
     <string name="text_take_picture">Ambil gambar makanan kamu</string>
     <string name="text_wait_for_a_moment">Tunggu beberapa saat</string>
     <string name="text_foodstuff_appears">Bahan makanan dari foto tersebut akan muncul beserta total kalorinya</string>
-    
+
     <string name="button_photo_again">Foto Lagi</string>
     <string name="button_menu">Menu</string>
     <string name="title_foodfact">FoodFact!</string>
+    <string name="label_choose_menu">Pilih Menu</string>
+    <string name="label_choose_item_for_send_image">Pilih item untuk mengirim gambar</string>
 </resources>
