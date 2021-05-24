@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUs"
+    tools:context=".presentation.about.AboutActivity"
     android:background="@color/color_dark_grey">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
         android:src="@drawable/_vliegen"
+        android:padding="@dimen/dimen_60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <include
+        android:id="@+id/toolbarAbout"
+        layout="@layout/layout_toolbar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

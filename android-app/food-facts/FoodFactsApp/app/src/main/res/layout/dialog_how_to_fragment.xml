@@ -1,87 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/color_dark_grey"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10dp">
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        android:background="@color/color_grey_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" >
+    <TextView
+        style="@style/FoodFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_how_to_use"
+        android:textAlignment="center"
+        android:textColor="@color/color_light_grey"
+        android:textSize="@dimen/text_size_26sp" />
 
-        <TextView
-            android:id="@+id/how_to_title"
-            style="@style/FoodFactText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_how_to_use"
-            android:textAlignment="center"
-            android:textColor="@color/color_light_grey"
-            android:textSize="@dimen/text_size_26sp"/>
+    <TextView
+        style="@style/FoodFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/text_click_camera_button"
+        android:textColor="@color/color_light_grey"
+        android:textSize="@dimen/text_size_16sp" />
 
-        <TextView
-            android:id="@+id/tv_step1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_click_camera_button"
-            android:textColor="@color/color_light_grey"
-            android:layout_marginStart="@dimen/dimen_10dp"
-            android:padding="@dimen/dimen_10dp"
-            android:textSize="@dimen/text_size_16sp"
-            style="@style/FoodFactText"
-            />
-        <TextView
-            android:id="@+id/tv_step2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_take_picture"
-            android:textColor="@color/color_light_grey"
-            android:layout_marginStart="@dimen/dimen_10dp"
-            android:padding="@dimen/dimen_10dp"
-            android:textSize="@dimen/text_size_16sp"
-            style="@style/FoodFactText"
-            />
-        <TextView
-            android:id="@+id/tv_step3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_wait_for_a_moment"
-            android:textColor="@color/color_light_grey"
-            android:layout_marginStart="@dimen/dimen_10dp"
-            android:padding="@dimen/dimen_10dp"
-            android:textSize="@dimen/text_size_16sp"
-            style="@style/FoodFactText"
-            />
-        <TextView
-            android:id="@+id/tv_step4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_foodstuff_appears"
-            android:textColor="@color/color_light_grey"
-            android:layout_marginStart="@dimen/dimen_10dp"
-            android:padding="@dimen/dimen_10dp"
-            android:textSize="@dimen/text_size_16sp"
-            style="@style/FoodFactText"
-            />
+    <TextView
+        style="@style/FoodFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/text_take_picture"
+        android:textColor="@color/color_light_grey"
+        android:textSize="@dimen/text_size_16sp" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:background="#00FFFFFF"
-            android:padding="@dimen/dimen_10dp"
-            android:src="@drawable/ic_back" />
+    <TextView
+        style="@style/FoodFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/text_wait_for_a_moment"
+        android:textColor="@color/color_light_grey"
+        android:textSize="@dimen/text_size_16sp" />
 
-    </LinearLayout>
+    <TextView
+        style="@style/FoodFactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/text_foodstuff_appears"
+        android:textColor="@color/color_light_grey"
+        android:textSize="@dimen/text_size_16sp" />
 
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@drawable/ic_back" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
