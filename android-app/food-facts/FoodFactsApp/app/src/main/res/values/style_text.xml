@@ -26,12 +26,20 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="FoodFactText.Yellow">
+        <item name="android:textColor">@color/color_yellow</item>
+    </style>
+
     <style name="FoodFactText.Bold.White">
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="FoodFactText.Bold.Black">
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FoodFactText.Bold.Yellow">
+        <item name="android:textColor">@color/color_yellow</item>
     </style>
 
     <style name="FoodFactText.Medium.White">
@@ -42,12 +50,20 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="FoodFactText.Medium.Yellow">
+        <item name="android:textColor">@color/color_yellow</item>
+    </style>
+
     <style name="FoodFactText.SemiBold.White">
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="FoodFactText.SemiBold.Black">
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FoodFactText.SemiBold.Yellow">
+        <item name="android:textColor">@color/color_yellow</item>
     </style>
 
 </resources>

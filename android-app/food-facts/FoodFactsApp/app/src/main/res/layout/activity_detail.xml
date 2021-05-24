@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_grey"
+    tools:context=".presentation.detail.DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="@dimen/dimen_113dp"
+        android:layout_height="@dimen/dimen_113dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:src="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNameDetail"
+        style="@style/FoodFactText.Medium.White"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintBottom_toTopOf="@id/tvCaloryDetail"
+        app:layout_constraintEnd_toStartOf="@id/btnFavDetail"
+        app:layout_constraintStart_toEndOf="@id/imgDetail"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail"
+        tools:text="Mie Ayam" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCaloryDetail"
+        style="@style/FoodFactText.White"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvNameDetail"
+        tools:text="Total Kalori: 300Kcal" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnFavDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_bookmarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNameDetail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFoodMaterialDetail"
+        style="@style/FoodFactText.Medium.White"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:text="@string/label_food_material"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgDetail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFoodMaterial"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/stickyDonasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFoodMaterialDetail"
+        tools:listitem="@layout/item_material_food" />
+
+    <LinearLayout
+        android:id="@+id/stickyDonasi"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dark_grey"
+        android:elevation="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop">
+
+        <Button
+            android:id="@+id/btnPhotoAgain"
+            style="@style/FoodFactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="@string/button_photo_again"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/toolbarDetail"
+        layout="@layout/layout_toolbar" />
+
+    <ProgressBar
+        android:id="@+id/pbDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/imgDetail"
+        app:layout_constraintEnd_toEndOf="@id/imgDetail"
+        app:layout_constraintTop_toTopOf="@id/imgDetail"
+        app:layout_constraintBottom_toBottomOf="@id/imgDetail"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
