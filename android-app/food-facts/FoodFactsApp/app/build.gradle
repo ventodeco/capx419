@@ -60,10 +60,10 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     // Photo Viewer
-    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    //implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 
     // Multi State View
-    implementation  'com.github.Kennyc1012:MultiStateView:2.2.0'
+    //implementation  'com.github.Kennyc1012:MultiStateView:2.2.0'
 
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'

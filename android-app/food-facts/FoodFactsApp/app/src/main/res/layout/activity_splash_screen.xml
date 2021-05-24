@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/title_foodfact"
         android:textColor="@color/color_yellow"
+        android:fontFamily="@font/saira_regular"
         android:textSize="@dimen/text_size_40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
