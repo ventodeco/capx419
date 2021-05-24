@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodFactsApp">
-        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".SplashScreenActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
