@@ -15,4 +15,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/store-image', 'FoodImageController@store');

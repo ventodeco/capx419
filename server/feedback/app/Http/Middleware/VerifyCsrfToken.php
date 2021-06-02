@@ -20,6 +20,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
-        'store-image',
+        'api/v1/store-image',
     ];
 }
