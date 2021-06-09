@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config ./src/index.ts dotenv_config_path=./.env",
     "build": "tsc  --project .",
-    "start": "node -r dotenv/config ./build/index.js dotenv_config_path=/.env"
+    "start": "node -r dotenv/config ./build/index.js dotenv_config_path=./.env"
   },
   "author": "",
   "license": "ISC",
