@@ -13,7 +13,7 @@ const PORT = process.env.PORT ?? 8080
 app.use(express.json({ limit: '2mb' }))
 app.use(validateRequest)
 
-app.post('/', async function (req: express.Request, res: express.Response) {
+app.post('/analyze-food', async function (req: express.Request, res: express.Response) {
   try {
     const foodName: string = await db.getFoodNameFromImage(req.body.image)
     const recipe = await db.getFoodRecipe(foodName)

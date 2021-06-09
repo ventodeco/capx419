@@ -1,7 +1,7 @@
 {
   "scripts": {
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,html,css}'",
-    "lint": "eslint --fix .",
+    "lint": "eslint --fix",
     "prepare": "husky install"
   },
   "devDependencies": {
