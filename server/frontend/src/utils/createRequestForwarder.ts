@@ -7,7 +7,7 @@ export function createRequestForwarder(targetUrl: string) {
       const fwdRes = await axios.post(targetUrl, req.body)
       res.status(fwdRes.status).json(fwdRes.data)
     } catch (error) {
-      console.log(error.message)
+      console.log('ERR | ' + targetUrl + ' | ' + error.message)
       res.status(500).json({
         status: true,
         meta: {
