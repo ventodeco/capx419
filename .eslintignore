@@ -2,7 +2,8 @@
 **/*.*
 
 # Enable linting just for some files
-!server/food-recipe/**/*
+!server/food-recipe-calorie/**/*
+!server/frontend/**/*
 
 # dependencies
 **/node_modules
